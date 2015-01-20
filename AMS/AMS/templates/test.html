@@ -1,0 +1,23 @@
+{% load static from staticfiles %}
+<!DOCTYPE HTML>
+    <head>
+        <title>Query Result</title>
+        <link  rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css "
+    </head>
+    <body class="brb">
+        <h1>Your query result</h1>
+        <table border="1" style="width: auto">
+            <tr>
+                <th>IATA CODE</th>
+                <th>AIRLINE NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row.0 }}</td>                    
+                <td>{{ row.1}}</td>
+                <td>{{ row.2}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>

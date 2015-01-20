@@ -1,0 +1,85 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav {
+    margin-top: 100px;
+}
+
+.bainfo {
+    margin-left: 330px;
+}
+
+.nav li {
+  display: inline;
+  
+}
+
+body h1 {
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brb {
+    background-image: url(http://www.hok.com/uploads/2012/03/28/gandhi01.jpg);
+    background-size: cover;
+}
+
+.brb h1 {
+    margin-left: 550px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron {
+    margin-top: 80px;
+    background: url(images/52652734.jpg);
+    background-size: 1000px 300px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 300px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 350px;
+    width: 100%;
+    color: white;
+}
+
+table , th, td {
+    border: 1px solid  black;
+}
+
+th {
+    background-color: #9999FF;
+    color: blue;
+}
+
+td {
+    background-color: #CC99FF;
+    color: red;
+}
+

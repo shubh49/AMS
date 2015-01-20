@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Arrivals Info</title>
+    <link  rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css ">
+</head>
+<body class="bainfo">
+    <h1>T3 recieves flights from about 200 places from all around the world</h2>
+    <img src="http://iss.ku.edu/sites/iss.drupal.ku.edu/files/images/general/NewlyAdmitted/expat_living_tips_upon_arrival.jpg">
+    <h1>Enter the name of Source city</h1>
+    <form action="/arrquery/" method="post">
+        {% csrf_token %}
+        <input type="text" name="cname" id="cname" placeholder="City Name">
+        <button type="submit">Submit</button>
+    </form>
+</body>

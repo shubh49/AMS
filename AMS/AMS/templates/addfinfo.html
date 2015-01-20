@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Add Flights Info</title>
+    <link  rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css">
+</head>
+<body class="bainfo">
+    <h1>Register a new flight information in database</h1>
+    <img height=400px width=600px src="{{ STATIC_URL }}images/sunset-image-of-flight-landing.jpg">
+    <h1>Enter the details as follows</h1>
+    <form action="/addfun/" method="post">
+        {% csrf_token %}
+        <input type="text" name="fid" id="fid" placeholder="FID">
+        <input type="text" name="status" id="status" placeholder="STATUS">
+        <input type="text" name="date" id="date" placeholder="DATE">
+        <input type="text" name="time" id="time" placeholder="TIME">
+        <button type="submit">Submit</button>
+    </form>
+</body>

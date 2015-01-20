@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Departures Info</title>
+    <link  rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css ">
+</head>
+<body class="bainfo">
+    <h1>T3 is connected to almost all parts of the world</h2>
+    <img height=400px width=600px src="{{ STATIC_URL }}images/World_Travel___Tourism_Scoreboard_departures_and_arrivals_018987_.jpg">
+    <h1>Enter the name of Destination city</h1>
+    <form action="/depart/" method="post">
+        {% csrf_token %}
+        <input type="text" name="cname" id="cname" placeholder="City Name">
+        <button type="submit">Submit</button>
+    </form>
+</body>
